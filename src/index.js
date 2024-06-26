@@ -1,33 +1,16 @@
+// index.js
 import dotenv from "dotenv";
 import connectDB from "./db/index.js";
 
-dotenv.config({
-    path:"./env"
-})
-connectDB
+dotenv.config();
+connectDB();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 // import express from "express"
 // const app=express()
 
 // (async()=>{
+    //         await mongoose.connect(`${process.env.MONGO_URI}/${DB_NAME}`)  
 //     try{
-//         await mongoose.connect(`${process.env.MONGO_URI}/${DB_NAME}`)
 //             app.on("error",(error)=>{
 //                 console.log("ERR:",error);
 //                 throw error
